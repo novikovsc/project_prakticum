@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Новиков ИВТм-1-22</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        .text {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .button {
+            font-size: 20px;
+        }
+
+    </style>
+    <script>
+        $(function() {
+            let text = 1
+            $('.button').on("click", function() {
+                text += 1
+                $('.text').text(text)
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="text">1</div>
+        <div>
+            <button class="button">Новиков ИВТм-1-22 +1</button>
+        </div>
+    </div>
+</body>
+</html>
