@@ -37,6 +37,9 @@
                 text += 1
                 $('.text').text(text)
             })
+            $(".refresh").on("click", function() {
+                text = 0
+                $('.text').text(text)
         })
     </script>
 </head>
@@ -45,6 +48,9 @@
         <div class="text">1</div>
         <div>
             <img src="https://chekhovmuseum.com/upload/iblock/4de/4dee0eb17ee0df8fad77d3fd4e53a4ca.jpg" class="button">
+        </div>
+        <div>
+            <button class="refresh">Сброс</button>
         </div>
     </div>
 </body>
